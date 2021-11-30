@@ -1,0 +1,4 @@
+credentials
+tweepy
+selenium
+Pillow
