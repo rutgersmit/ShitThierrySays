@@ -33,7 +33,7 @@ class Screenshotter():
         global driver
         driver = webdriver.Remote(
             options=options,
-            command_executor='http://{}:4444/wd/hub'.format('192.168.100.10'),
+            command_executor='http://{}:4444/wd/hub'.format('192.168.100.10'), # TODO: make configurable
             desired_capabilities=DesiredCapabilities.CHROME)
 
     def screenshot(self, id):
@@ -46,7 +46,7 @@ class Screenshotter():
         driver.get(f"https://twitter.com/thierrybaudet/status/{id}")
         time.sleep(5)
 
-        driver.save_screenshot("pdata/age.png")
+        driver.save_screenshot("pdata/page.png")
         element = driver.find_element_by_css_selector('article[data-testid="tweet"]')
 
         location = element.location
