@@ -1,0 +1,7 @@
+/__pycache__
+/data
+/tests
+.venv
+.vscode
+tests.py
+build-and-push.sh
