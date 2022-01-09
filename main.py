@@ -44,6 +44,10 @@ def run():
     if not path.isdir(f"data/{username}"):
         os.makedirs(f"data/{username}")
 
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth)
+
     since_id = get_last_id(username)
 
     tweets = api.user_timeline(screen_name=username,
