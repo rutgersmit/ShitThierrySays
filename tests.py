@@ -28,35 +28,35 @@ tweet = api.get_status(1466505804090122253)
 l = shotter.screenshot(tweet)
 os.rename(l, "tests/original_tweet_without_replies.png")
 
-# # original tweet with replies
-# print('original tweet with replies')
-# tweet = api.get_status(1467873464216440842)
-# l = shotter.screenshot(tweet)
-# os.rename(l, "tests/original_tweet_with_replies.png")
+# original tweet with replies
+print('original tweet with replies')
+tweet = api.get_status(1467873464216440842)
+l = shotter.screenshot(tweet)
+os.rename(l, "tests/original_tweet_with_replies.png")
 
-# # reply on deleted tweet
-# print('reply on deleted tweet')
-# tweet = api.get_status(1454179653858603010)
-# l = shotter.screenshot(tweet)
-# os.rename(l, "tests/reply_on_deleted_tweet.png")
+# reply on deleted tweet
+print('reply on deleted tweet')
+tweet = api.get_status(1454179653858603010)
+l = shotter.screenshot(tweet)
+os.rename(l, "tests/reply_on_deleted_tweet.png")
 
-# # reply on tweet with image
-# print('reply on tweet with image')
-# tweet = api.get_status(1454499417395015691)
-# l = shotter.screenshot(tweet)
-# os.rename(l, "tests/reply_on_tweet_with_image.png")
+# reply on tweet with image
+print('reply on tweet with image')
+tweet = api.get_status(1454499417395015691)
+l = shotter.screenshot(tweet)
+os.rename(l, "tests/reply_on_tweet_with_image.png")
 
-# # quoted deleted tweet
-# print('quoted deleted tweet')
-# tweet = api.get_status(1448380249998303232)
-# l = shotter.screenshot(tweet)
-# os.rename(l, "tests/quoted_deleted_tweet.png")
+# quoted deleted tweet
+print('quoted deleted tweet')
+tweet = api.get_status(1448380249998303232)
+l = shotter.screenshot(tweet)
+os.rename(l, "tests/quoted_deleted_tweet.png")
 
-# # reply on retweet with video
-# print('reply on retweet with video')
-# tweet = api.get_status(1454912491406905358)
-# l = shotter.screenshot(tweet)
-# os.rename(l, "tests/reply_on_retweet_with_video.png")
+# reply on retweet with video
+print('reply on retweet with video')
+tweet = api.get_status(1454912491406905358)
+l = shotter.screenshot(tweet)
+os.rename(l, "tests/reply_on_retweet_with_video.png")
 
 print('long thread conversation tweet')
 tweet = api.get_status(1462773987407060996)
